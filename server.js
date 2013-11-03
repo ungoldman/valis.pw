@@ -1,4 +1,3 @@
-var fs = require('fs');
 var union = require('union');
 var ecstatic = require('ecstatic');
 
