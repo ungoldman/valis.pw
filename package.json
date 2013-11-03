@@ -13,5 +13,9 @@
     "union": "~0.3.7",
     "ecstatic": "~0.4.12",
     "director": "~1.2.0"
+  },
+  "engines": {
+    "node": "0.10.x",
+    "npm":  "1.3.x"
   }
 }
