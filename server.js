@@ -1,5 +1,6 @@
 var union = require('union');
 var ecstatic = require('ecstatic');
+var director = require('director');
 
 exports.start = function(options) {
   options = options || {};
@@ -7,6 +8,7 @@ exports.start = function(options) {
   var publicPath = options.publicPath || 'public';
   var port = options.port || process.env.PORT || 3000;
   var name = options.name || 'static server';
+  var router = new director.http.Router();
 
   var server = union.createServer({
     before: [
