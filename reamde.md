@@ -1,5 +1,3 @@
-# valis.pw
-
-source for [valis.pw](http://valis.pw)
+# [valis.pw](http://valis.pw)
 
 :suspect:
