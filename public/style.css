@@ -1,4 +1,9 @@
+html, body {
+  margin: 0;
+  padding: 0;
+}
 html {
+  font-family: Gill Sans, sans-serif;
   background: #000 url(/bg.gif) no-repeat center center fixed;
   color: #fff;
   -webkit-background-size: cover;
@@ -8,14 +13,25 @@ html {
 }
 .wrap {
   opacity: .9;
-  color: rgba(110,130,255,1);
+  color: #acf;
   background: rgba(0,55,0,.7);
   margin: 30px;
   padding: 10px;
   width: 640px;
 }
-h1 {
+dl {
   margin-top: 0;
+}
+dt {
+  color: whitesmoke;
+  font-size: 18px;
+  font-weight: 500;
+}
+dd {
+  color: gainsboro;
+  font-size: 12px;
+  font-weight: 100;
+  font-style: italic;
 }
 a {
   color: #33ee44;
