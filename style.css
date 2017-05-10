@@ -1,38 +1,23 @@
-html, body {
-  margin: 0;
-  padding: 0;
+* { box-sizing: border-box; }
+.video-background {
+  background: #000;
+  position: fixed;
+  top: 0; right: 0; bottom: 0; left: 0;
+  z-index: -99;
 }
-html {
-  font-family: Gill Sans, sans-serif;
-  background: #000 url(/bg.gif) no-repeat center center fixed;
-  color: #fff;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
+.video-foreground,
+.video-background iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
 }
-.wrap {
-  opacity: .9;
-  color: #acf;
-  background: rgba(0,55,0,.7);
-  margin: 30px;
-  padding: 10px;
-  width: 640px;
+
+@media (min-aspect-ratio: 16/9) {
+  .video-foreground { height: 300%; top: -100%; }
 }
-dl {
-  margin-top: 0;
-}
-dt {
-  color: whitesmoke;
-  font-size: 18px;
-  font-weight: 500;
-}
-dd {
-  color: gainsboro;
-  font-size: 12px;
-  font-weight: 100;
-  font-style: italic;
-}
-a {
-  color: #33ee44;
+@media (max-aspect-ratio: 16/9) {
+  .video-foreground { width: 300%; left: -100%; }
 }
