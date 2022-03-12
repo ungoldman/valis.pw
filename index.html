@@ -32,32 +32,13 @@ describing the system."
   <meta charset="UTF-8">
   <title>V.A.L.I.S. Probability Wave</title>
   <style>
-    * { box-sizing: border-box; }
-    .video-background {
-      background: #000;
-      position: fixed;
-      top: 0; right: 0; bottom: 0; left: 0;
-      z-index: -99;
-    }
-    .video-foreground,
-    .video-background iframe {
-      position: absolute;
-      top: 0;
-      left: 0;
-      width: 100%;
-      height: 100%;
-      pointer-events: none;
-    }
-    @media (min-aspect-ratio: 16/9) { .video-foreground { height: 300%; top: -100%; } }
-    @media (max-aspect-ratio: 16/9) { .video-foreground { width: 300%; left: -100%; } }
+    html { background: black; color: green }
+    html, body { margin: 0; padding: 0; }
+    body { background: url('./bg.gif') center center no-repeat; background-size: cover; }
+    .cyberpunk { width: 100vw; height: 100vh; opacity: .88 }
   </style>
 </head>
 <body>
-  <div class="video-background">
-    <div class="video-foreground">
-      <iframe src="https://www.youtube.com/embed/UdvxPlhTjDU?controls=0&showinfo=0&rel=0&autoplay=1&loop=1&start=177"
-        frameborder="0" allowfullscreen></iframe>
-    </div>
-  </div>
+  <iframe class="cyberpunk" src="https://www.youtube.com/embed/UdvxPlhTjDU?controls=0" title="cyberpunk documentary" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 </body>
 </html>
