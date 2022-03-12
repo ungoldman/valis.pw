@@ -23,3 +23,9 @@ wave is described by the wave function,
 which is a solution to the wave equation
 describing the system."
 ```
+
+---
+
+![](./bg.gif)
+
+GIF source: [Snatcher](https://en.wikipedia.org/wiki/Snatcher_(video_game)) (1995) https://youtu.be/oNxMWfpSI6A
